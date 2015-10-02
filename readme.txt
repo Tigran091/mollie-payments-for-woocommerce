@@ -1,9 +1,9 @@
 === Mollie Payments for WooCommerce ===
-Contributors: l.vangunst
+Contributors: l.vangunst, daanvm
 Tags: mollie, payments, woocommerce, e-commerce, webshop, psp, ideal, sofort, credit card, creditcard, visa, mastercard, mistercash, bancontact, bitcoin, paysafecard, banktransfer, overboeking, betalingen
 Requires at least: 3.8
-Tested up to: 4.2.4
-Stable tag: 2.0
+Tested up to: 4.3.1
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,7 @@ Where possible, also include the Mollie log file. You can find the Mollie log fi
 3. The available payment gateways in the checkout.
 4. The order received page will display the payment status and customer details if available.
 5. The order received page for the gateway banktransfer will display payment instructions.
+6. Some payment methods support refunds. The 'Refund' button will be available when the payment method supports refunds.
 
 == Installation ==
 
@@ -104,8 +105,13 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
-= 2.0.0 =
+= 2.0.0 - 17/08/2015 =
 * Complete rewrite of our WooCommerce plugin to better follow WordPress and WooCommerce standards and add better support for other plugins.
+
+= 2.0.1 - 02/10/2015 =
+* Add support for SEPA Direct Debit.
+* Add message for Belfius, Bitcoin, Bancontact/Mister Cash and paysafecard when the payment is paid successfully.
+
 
 == Upgrade Notice ==
 
